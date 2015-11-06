@@ -1,5 +1,5 @@
 # Insight Data Science Challenge
-I programmed my solution to this challenge on Java, testing on version 1.8.0_65 and using the libraries in the Java Development Toolkit 8 (8u65). I tested on Cygwin so hopefully everything compiles properly on Linux.
+I programmed my solution to this challenge on Java, testing on version 1.8.0_65 and using the libraries in the Java Development Toolkit 8 (8u65) as well as the default libraries. I tested on Cygwin so hopefully everything compiles properly on Linux.
 
 ## Part 1: Cleaning tweet text
 My approach to this was simply to read the tweets.txt document line by line, grab the text and created_at datafields from the JSON, and then format the text-field from escape sequences and any unparsed unix characters, counting them in the process. The result is then printed in the format <text> (created at: <time>).
