@@ -88,7 +88,7 @@ public class average_degree {
 			if (hashtag.contains("\"text\":")) {
 				//Split the hashtags
 				String[] hashtags = hashtag.split("\\{\"text\":\"");
-				output.println(hashtag);
+				//output.println(hashtag);
 				
 				
 				//for loop to read hashtags to list skipping the first empty entry after split 0
@@ -104,7 +104,7 @@ public class average_degree {
 							//Add to ongoing list of dated hashtags
 							temp = temp + "(timestamp: " + date + ")";
 							hashlist.add(temp);
-							output.println("+" + temp);
+							//output.println("+" + temp);
 						}
 					} 
 					for (i=1; i<hashtags.length; i++) {
@@ -167,7 +167,7 @@ public class average_degree {
 					String [] hashtags = temp.split(", ");
 					
 					//remove the entry from list
-					output.println("-" + hashlist.get(i));
+					//output.println("-" + hashlist.get(i));
 					hashlist.remove(i);
 					
 					//test hashtags against allhashtags list and remove if there
@@ -250,11 +250,7 @@ public class average_degree {
 				edges = edgelist.size();
 				n_hashtags = allhashtags.size();
 				average = 2*(edges)/(n_hashtags);
-				output.printf("total edges were %.2f", edges);
-				output.println();
-				output.printf("total hashtags with connections were %.2f", n_hashtags);
-				output.println();;
-				output.printf("Average degree of touching was %.2f", average);
+				output.printf("%.2f", average);
 				output.println();
 			}
 			else output.println("No hashtags so far.");
