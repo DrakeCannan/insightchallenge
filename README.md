@@ -1,4 +1,4 @@
-# Insight Data Science Challenge
+# Insight Data Engineering Challenge
 I programmed my solution to this challenge on Java, testing on version 1.8.0_65 and using the libraries in the Java Development Toolkit 8 (8u65) as well as the default libraries. I tested on Cygwin so hopefully everything compiles properly on Linux.
 
 ## Part 1: Cleaning tweet text
