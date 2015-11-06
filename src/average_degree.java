@@ -11,12 +11,12 @@ public class average_degree {
 	public static void main(String[] args) throws Exception {
 		
 		//Load file with JSONs
-		String file1 = "tweet_input/tweets.txt";
+		String file1 = "../tweet_input/tweets.txt";
 		File jsonfile = new File(file1);
 		
 		//Load output file ft2
-		String file3 = "tweet_output/ft2.txt";
-		File ft2 = new File(file3);
+		String file2 = "../tweet_output/ft2.txt";
+		File ft2 = new File(file2);
 		if (!ft2.exists()) ft2.createNewFile();
 		
 		//Create JSON scanner
