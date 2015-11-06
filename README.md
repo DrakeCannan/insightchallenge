@@ -11,12 +11,18 @@ The first part of this is fairly simple, and it's similar to part 1 described ab
 
 After the hashtags are cleaned and extracted, I saved them into three updating lists:
 
-- List of hashtags from tweets with multiple hashtags: 
-format of #< hashtag1 >, #< hashtag2 >, #< hashtag3 >, (Created at: <time>)
-- List of all hashtags: 
-format of #< hashtag >,
-- List of all "edges" or hashtag links: 
-format of #< hashtag1 >,<->#< hashtag2 >,
+- List of hashtags from tweets with multiple hashtags, with format: 
+```
+#<hashtag1>, #<hashtag2>, #<hashtag3>, (Created at: <time>)
+```
+- List of all hashtags, with format: 
+```
+#<hashtag>,
+```
+- List of all "edges", with format:
+```
+#<hashtag1>, <-> #<hashtag2>,
+```
   
 When a new tweet with more than one hashtag is read, it is addded into the dated list of all hashtags. The code searches through the list of individual hashes to see if all hashes are listed there and adds them if not. The code also searches through the list of hashtag "edges" and sees if all groupings are listed there, again adding them if not.
 
