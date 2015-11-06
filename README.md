@@ -2,9 +2,12 @@
 I programmed my solution to this challenge on Java, testing on version 1.8.0_65 and using the libraries in the Java Development Toolkit 8 (8u65) as well as the default libraries. I tested on Cygwin so hopefully everything compiles properly on Linux.
 
 ## Part 1: Cleaning tweet text
-My approach to this was simply to read the tweets.txt document line by line, grab the text and created_at datafields from the JSON, and then format the text-field from escape sequences and any unparsed unix characters, counting them in the process. The result is then printed in the format <text> (created at: <time>).
+My approach to this was simply to read the tweets.txt document line by line, grab the text and created_at datafields from the JSON, and then format the text-field from escape sequences and any unparsed unix characters, counting them in the process. The result is then printed in the format 
+```
+<text> (created at: <time>)
+```
 
-At the end the number of unparsed unix characters is printed as well as the total number of tweets for comparison.
+At the end of the file, the number of unparsed unix characters is printed as well as the total number of tweets for comparison.
 
 ## Part 2: Counting hashtag coupling
 The first part of this is fairly simple, and it's similar to part 1 described above.
