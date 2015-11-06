@@ -4,9 +4,12 @@
 
 #Tested using libraries from Java Development Kit 8 8u65
 
+#move down to src
+cd src
+
 # Compile java programs
-javac ./src/tweets_cleaned.java
-javac ./src/average_degree.java
+javac tweets_cleaned.java
+javac average_degree.java
 
 # Execute java programs
 java tweets_cleaned
