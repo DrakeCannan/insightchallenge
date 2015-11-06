@@ -33,4 +33,6 @@ After that is the deleting and updating stage, implemented with the assumption t
 
 When this deletion happens, the updated list of dated hashtags is compared to the list of individual hashes and the list of edges to see if there is still a more recent list of hashtags with those entries so they can be readded.
 
+I opted for this methodology over the more processor-intensive method of simply running through the dated list of tweet hashtags and finding edges and unique hashtags for every new tweet. Full scans through the data lists are a big source of increased processing time, so I tried to minimize them as much as possible. 
+
 Finally, the list of all edges is counted (by computing the size of the list of edges) and multiplied by two; this represents the total amount of connections, each unique edge reaches out and increments the number of connections for two hashtags by one each. This sum of connections is then divided by the number of hashtags (computed by the size of the list of all hashtags). This figure is calculated and printed out for each new tweet.
