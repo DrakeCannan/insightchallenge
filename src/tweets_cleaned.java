@@ -6,14 +6,14 @@ public class tweets_cleaned {
 	public static void main(String[] args) throws Exception {
 		
 		//Load file with JSONs
-		String file1 = "tweet_input/tweets.txt";
+		String file1 = "../tweet_input/tweets.txt";
 		File jsonfile = new File(file1);
 		
 		//Create scanner
 		Scanner json = new Scanner(jsonfile);
 		
 		//Load output file ft1
-		String file2 = "tweet_output/ft1.txt";
+		String file2 = "../tweet_output/ft1.txt";
 		File ft1 = new File(file2);
 		if (!ft1.exists()) ft1.createNewFile();
 		
